@@ -1,0 +1,338 @@
+<!DOCTYPE HTML>
+<html lang="ru-RU">
+<head>
+	<title>HTML5. Уже пора?!</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1274, user-scalable=no">
+	<link rel="stylesheet" href="themes/ribbon/styles/style.css">
+	<link rel="stylesheet" href="themes/ribbon/styles/print.css" media="print">
+	<!--
+		Для оформления отдельный слайдов, используйте
+		ID слайда для доступа к необходимым элементам
+		-->
+	<style>
+		#Cover section {padding:0 120px 80px;}
+		.html5 {
+			background:#fff url(img/html5.svg) center top no-repeat;
+			background-size: 400px 400px;
+			height: 100%;
+			width: 100%;
+			position: relative;;
+		}
+		.html5 h2 {
+			font-size: 90px;
+			color:#333;
+			text-align:center;			
+			position: absolute;
+			bottom: 50px; 
+			width:100%;
+		}
+		#History .mylist {line-height: 1.5em !important}
+		.mylist li:before {line-height: 1em !important}
+		#technology .mylist {
+			position:absolute; 
+			right:2em;
+			top:28%;
+		}
+		#technology .mylist li {
+			font-size: 0.78em;
+			line-height: 1.15em;
+			margin-bottom: 10px;
+		}
+		#technology .mylist li:before {line-height:  0.5em !important; margin-left: -110px;}
+		#technology img {width: 65%}
+		header h4 {font-size: 70%; color:#999}
+		/*#offline ul {background: url(img/offline-web-app.png) top right no-repeat;height: 200px;}*/
+	</style>
+</head>
+<body class="list">
+	<header class="caption">
+		<h1>Презентация для доклада "HTML5. Уже пора?!" на конференции Tabtabus</h1>
+		<p>Дмитрий Поляков, Smolfun.ru</p>
+	</header>
+	<div class="slide cover h" id="Cover"><div>
+		<section>
+			<div class="html5">
+			<header>
+				<h2>Уже пора?!</h2>
+			</header>
+			</div>
+		</section>
+	</div></div>
+	<div class="slide" id="History"><div>
+		<section>
+
+			<header>
+				<h2>Немного истории</h2>
+			</header>
+			<ul class="mylist">
+				<li>1991 &mdash; создание языка HTML</li>
+				<li>1995 &mdash; HTML 2.0</li>
+				<li>1996 &mdash; CSS + JavaScript</li>
+				<li>1997 &mdash; HTML 4.0</li>
+				<li>1997 &mdash; CSS2</li>
+				<li>2000 &mdash; xHTML</li>
+				<li>2002 &mdash; отказ от табличной верстки, первый шаг обратно к семантике</li>
+				<li>2005 &mdash; AJAX</li>
+				<li>2009 &mdash; HTML5</li>
+			</ul>
+		</section>
+	</div></div>
+	<div class="slide" id="technology"><div>
+		<section>
+			<header>
+				<h2>Что нового?</h2>
+			</header>
+			<img src="img/technology.svg" />
+			<ul class="mylist">
+				<li>Семантика</li>
+				<li>Автономная работа<br />и хранение данных</li>
+				<li>Доступ к устройству</li>
+				<li>Новые способы коммуникации</li>
+				<li>Мультимедиа</li>
+				<li>2D,3D графика и эффекты</li>
+				<li>Производительность и интеграция</li>
+				<li>CSS3</li>
+			</ul>
+		</section>
+	</div></div>
+	<div class="slide" id="Semantics"><div>
+		<section>
+			<header>
+				<h2>Семантика</h2>
+			</header>
+			<p>Семантика дает представление о структуре документа и позволяет людям и программам более полно управлять данными.<br />В HTML5 добавлено множество семантических тегов, а также поддержка <a href="http://ru.wikipedia.org/wiki/Resource_Description_Framework" target="_blank">RDFa</a>, микроформатов и микроданных.</p>
+		</section>
+	</div></div>
+	<div class="slide" id="Semantics2"><div>
+		<section>
+			<header>
+				<h2>Семантика</h2>
+				<h4>Ссылки</h4>
+			</header>
+			<ul>
+				<li>Вадим Макеев &mdash; "<a href="http://pepelsbey.net/2011/07/sense-coding/" target="_blank">Вёрстка со смыслом</a>"</li>
+				<li>John Allsopp "<a href="http://www.alistapart.com/articles/semanticsinhtml5/" target="_blank">Semantics in HTML 5</a>" (<a href="http://htmlbook.ru/blog/semantika-v-html5" target="_blank">перевод на htmlbook.ru</a>)</li>
+				<li>Микроформаты &mdash; <a href="http://schema.org/" target="_blank">schema.org</a> и <a href="http://microformats.org/" target="_blank">microformats.org</a></li>
+			</ul>
+		</section>
+	</div></div>
+	<div class="slide" id="offline"><div>
+		<section>
+			<header>
+				<h2>Автономная работа<br />и хранение данных</h2>
+			</header>
+			<ul>
+				<li>Кэш приложений</li>
+				<li>localStorage</li>
+				<li>web SQL & indexed database</li>
+				<li>события в режиме подключения<br />и автономном режиме</li>
+			</ul>
+		</section>
+	</div></div>
+	<div class="slide" id="offlinelinks"><div>
+		<section>
+			<header>
+				<h2>Автономная работа<br />и хранение данных</h2>
+				<h4>Ссылки</h4>
+			</header>
+			<ul>
+				<li>HTML5 Features: 
+					<a href="http://www.html5rocks.com/ru/features/offline" target="_blank">Offline</a>
+					<a href="http://www.html5rocks.com/ru/features/storage" target="_blank">Storage</a>
+				</li>
+				<li>Michael Mahemoff &mdash; "<a  target="_blank" href="http://www.html5rocks.com/en/tutorials/offline/whats-offline/">The Meaning of "Offline"</a>" </li>
+			</ul>
+		</section>
+	</div></div>
+	<div class="slide" id="offlineexample"><div>
+		<section>
+			<header>
+				<h2>Автономная работа<br />и хранение данных</h2>
+				<h4>Примеры</h4>
+			</header>
+			<ul>
+				<li><a href="http://googlecode.blogspot.com/2009/04/gmail-for-mobile-html5-series-using.html" target="_blank">Gmail for mobile HTML5</a>
+				</li>
+				<li><a target="_blank" href="http://www.cuttherope.ie/faq.html">СutTheRope</a></li>
+				<li>Angry Birds в Chromium</li>
+			</ul>
+		</section>
+	</div></div>
+	<div class="slide" id="device"><div>
+		<section>
+			<header>
+				<h2>Доступ к устройству</h2>
+			</header>
+			<p>В пятой редакции языка появились чрезвычайно мощные API (File API, History API, Webaudio API и пр.) для взаимодействия с бинарными данными и локальной файловой системой пользователя. </p>
+			<p>Помимо прочего, File API дает возможность синхронно/асинхронно считывать файлы, записывать файлы во временные каталоги, рекурсивно читать каталоги с файлами, нативный Drag`n`Drop, а также загружать бинарные данные с помощью Ajax.</p>
+		</section>
+	</div></div>
+	<div class="slide" id="deviceexample"><div>
+		<section>
+			<header>
+				<h2>Доступ к устройству</h2>
+				<h4>Примеры</h4>
+			</header>
+			<ul>
+				<li>GMail и Яндекс.Почта</a>
+				</li>
+				<li>Драм-машина <a href="http://www.chromeexperiments.com/detail/the-drumlet/" target="_blank">The Drumlet</a></li>
+				<li><a href="http://www.picozu.com/editor" target="_blank">Picozu Image Editor</a></li>
+			</ul>
+		</section>
+	</div></div>
+	<div class="slide" id="connectivity"><div>
+		<section>
+			<header>
+				<h2>Новые способы коммуникации</h2>
+			</header>
+			<p>Более эффективное подключение устраняет задержки в чате, делает игры динамичнее и улучшает взаимодействие.</p><p>А веб-сокеты и отправка событий с сервера позволяют доставлять данные к клиенту наиболее эффективным образом.</p>
+		</section>
+	</div></div>	
+	<div class="slide" id="connectivitylinks"><div>
+		<section>
+			<header>
+				<h2>Новые способы коммуникации</h2>
+				<h4>Ссылки</h4>
+			</header>
+			<ul>
+				<li><a href="http://www.websocket.org/index.html" target="_blank">websocket.org</a></li>
+				<li><a href="http://www.tutorialspoint.com/html5/html5_websocket.htm" target="_blank">WebSockets Tutorial</a>
+				</li>
+			</ul>
+		</section>
+	</div></div>
+	<div class="slide" id="multimedia"><div>
+		<section>
+			<header>
+				<h2>Мультимедиа</h2>
+			</header>
+			<p>С помощью новых API можно обращаться к данным временной шкалы и состояния файлов в сети и работать с ними. Вскоре будут выпущены дополнения к API, которые позволят считывать исходные данные из аудиофайлов и вести в них запись (API звуковых данных), а также работать с подписями к видео (API контроля времени).</p>
+		</section>
+	</div></div>
+	<div class="slide" id="multimedialinks"><div>
+		<section>
+			<header>
+				<h2>Мультимедиа</h2>
+				<h4>Примеры</h4>
+			</header>
+			<ul>
+				<li><a href="http://www.youtube.com/html5" target="_blank">Проигрыватель видео HTML5 от YouTube</a></li>
+				<li><a href="http://wheelsofsteel.net" target="_blank">Wheels Of Steel</a> (a Web-based DJ prototype)
+				</li>
+				<li><a href="http://www.battleborn.fm/" target="_blank">battleborn.fm</a></li>
+				<li><a href="http://www.nyan.cat/" target="_blank">nyan.cat</a></li>
+			</ul>
+		</section>
+	</div></div>
+	<div class="slide" id="graphics"><div>
+		<section>
+			<header>
+				<h2>2D,3D графика и эффекты</h2>
+			</header>
+			<p>На сегодняшний день доступно множество новых функций: двумерный элемент canvas, WebGL, SVG, трехмерные преобразования CSS и SMIL</p>
+		</section>
+	</div></div>
+	<div class="slide" id="graphicslinks"><div>
+		<section>
+			<header>
+				<h2>Мультимедиа</h2>
+				<h4>Ссылки</h4>
+			</header>
+			<ul>
+				<li><a href="http://www.html5rocks.com/ru/features/graphics" target="_blank">Графические объекты</a></li>
+				<li><a href="http://html5insight.ru/post/20523242948/unleash-the-power-of-html-5-canvas-for-gaming" target="_blank">Как раскрыть мощь HTML5 Canvas для игр</a></li>
+			</ul>
+		</section>
+	</div></div>	
+	<div class="slide" id="graphicsexamples"><div>
+		<section>
+			<header>
+				<h2>Мультимедиа</h2>
+				<h4>Примеры</h4>
+			</header>
+			<ul>
+				<li><a href="http://neave.com/webcam/html5/" target="_blank">Webcam Toy</a></li>
+				<li><a href="http://www.ro.me/" target="_blank">3 Dreams of Black</a> (интерактивный фильм)</li>
+				<li>Первый слайд презентации :)</li>
+			</ul>
+		</section>
+	</div></div>
+	<div class="slide" id="performance"><div>
+		<section>
+			<header>
+				<h2>Производительность и интеграция</h2>
+			</header>
+			<ul>
+				<li><span title="Уменьшение объема передаваемого через Интернет трафика с помощью заголовков If-Modified-Since и ETags">Кэширование HTTP</span>, данных на сервере и клиенте</li>
+				<li>Аппаратное ускорение</li>
+				<li>Уменьшение количества соединений</li>
+				<li>Предварительная выборка ссылок (prefetch)</li>
+				<li><a href="http://www.html5rocks.com/ru/features/performance" target="_blank">и т.д.</a></li>
+			</ul>
+		</section>
+	</div></div>
+	<div class="slide" id="css3"><div>
+		<section>
+			<header>
+				<h2>CSS3</h2>
+			</header>
+			<p>Технология поддерживает целый ряд новых функций и расширений, в том числе двумерные преобразования, переходы, трехмерные преобразования, веб-шрифты, Media Queries и многое другое.</p>
+		</section>
+	</div></div>
+	<div class="slide" id="css3links"><div>
+		<section>
+			<header>
+				<h2>CSS3</h2>
+				<h4>Ссылки</h4>
+			</header>
+			<ul>
+				<li><a href="http://css3please.com/" target="_blank">css3please.com</a></li>
+				<li><a href="http://www.colorzilla.com/gradient-editor/" target="_blank">Ultimate CSS Gradient Generator</a></li>
+				<li><a href="http://www.fontsquirrel.com/" target="_blank">fontsquirrel.com</a></li>
+			</ul>
+		</section>
+	</div></div>
+	<div class="slide" id="css3examples"><div>
+		<section>
+			<header>
+				<h2>CSS3</h2>
+				<h4>Примеры</h4>
+			</header>
+			<ul>
+				<li><a href="http://www.satine.org/research/webkit/snowleopard/snowstack.html" target="_blank">Snow Stack</a></li>
+				<li><a href="http://mediaqueri.es/" target="_blank">mediaqueri.es</a></li>
+				<li><a href="http://www.clicktorelease.com/code/css3dclouds/" target="_blank">CSS3D Clouds</a></li>
+			</ul>
+		</section>
+	</div></div>	
+	<div class="slide" id="Links"><div>
+		<section>
+			<header>
+				<h2>Полезные сылки</h2>
+			</header>
+			<ul>
+				<li><a href="http://www.html5rocks.com/ru/" target="_blank">html5rocks</a> – описания, статьи и руководства</li>
+				<li><a href="http://caniuse.com/" target="_blank">caniuse.com</a> – доступность фич в браузерах</li>
+				<li><a href="http://html5demos.com/" target="_blank">html5demos.com</a>, <a href="http://www.chromeexperiments.com/" target="_blank">chromeexperiments.com</a>, <a href="http://lab.hakim.se/" target="_blank">lab.hakim.se</a>, <a href="http://www.creativebloq.com/web-design-tips/examples-of-html5-1233547" target="_blank">examples-of-html5</a> – различные демо</li>
+			</ul>
+		</section>
+	</div></div>						
+	<div class="slide" id="ThankYou"><div>
+		<section>
+			<header>
+				<h2>HTML5. Уже пора!</h2>
+			</header>
+			<p>Дмитрий Поляков</p>
+			<ul>
+				<li><a href="http://my-html.ru">my-html.ru</a></li>
+				<li><a href="http://twitter.com/dpolyakov">@dpolyakov</a></li>
+				<li><a href="mailto:dima@my-html.ru">dima@my-html.ru</a></li>
+			</ul>
+		</section>
+	</div></div>
+	<div class="progress"><div></div></div>
+	<script src="scripts/script.js"></script>
+</body>
+</html>
